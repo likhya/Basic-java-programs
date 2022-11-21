@@ -1,0 +1,111 @@
+Fee Collection
+
+Write a program to determine the fee amount to be collected from a student. The input to the program are the type of the student, tuition fee, bus fee, hostel fee.
+
+Refer the table below for fee details.
+
+Student Type
+
+Student Type denoted as
+
+Fee Details
+
+Merit Seat Day Scholar
+
+MSDS
+
+Tuition fee + Bus fee
+
+Merit Seat Hosteller
+
+MSH
+
+Tuition fee + Hostel fee
+
+Management Seat Day Scholar
+
+MGSDS
+
+150% of Tuition fee + Bus fee
+
+Management Seat Hosteller
+
+MGSH
+
+150% of Tuition fee + Hostel fee
+
+ 
+
+Input and Output Format:
+
+Input consists of a string (student type), tuition fee (float), bus fee (float) and hostel fee (float). All floating point numbers are displayed correct to 2 decimal places.
+
+Refer sample input and output for formatting specifications.
+
+All text in bold corresponds to input and the rest corresponds to output.
+
+Sample Input and Output:
+
+Enter the student type
+
+MSH
+
+Enter tuition fee
+
+40000
+
+Enter hostel fee
+
+50000
+
+The fees to be paid by the student is Rs.90000.00
+
+Source Code:
+
+import java.util.*;
+public class Fee
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the student type");
+        String t=sc.nextLine();
+        switch(t){
+            case "MSDS":
+            System.out.print("Enter tuition fee\n");
+            float b=sc.nextFloat();
+            System.out.print("Enter bus fee\n");
+            float c=sc.nextFloat();
+            System.out.printf("The fees to be paid by the student is Rs.%.2f",b+c);
+            break;
+            case "MSH":
+            System.out.print("Enter tuition fee\n");
+            float d=sc.nextFloat();
+            System.out.print("Enter hostel fee\n");
+            float e=sc.nextFloat();
+            System.out.printf("The fees to be paid by the student is Rs.%.2f",d+e);
+            break;
+            case "MGSDS":
+            System.out.print("Enter Tuition fee\n");
+            float f=sc.nextFloat();
+            System.out.print("Enter Bus fee\n");
+            float g=sc.nextFloat();
+            float l=(150/f)*100;
+            System.out.print("The fees to be paid by the student is ");
+            System.out.printf(" Rs.%.2f",l+g);
+            break;
+            case "MGSH":
+            System.out.print("Enter Tuition fee\n");
+            float h=sc.nextFloat();
+            System.out.print("Enter Hostel fee\n");
+            float i=sc.nextFloat();
+            float z=h/2;
+            System.out.print("The fees to be paid by the student is"); 
+            System.out.printf(" Rs.%.2f",z+h+i);
+            break;
+            
+            
+        }
+        
+    }
+}
