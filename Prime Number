@@ -1,0 +1,48 @@
+Prime Number
+
+Write a program to find whether the given number is Prime number or Not.
+
+Input & Output Format:
+
+Input consists of one integer.
+
+Output consists of a string.
+
+If it is prime then display "Prime Number" or if it is not prime then display "Not a Prime"
+
+Sample Input:
+
+2
+
+Sample Output:
+
+Prime Number
+
+Source Code:
+import java.util.*;
+public class Prime
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int n=0;
+        for(int i=2;i<=x;i++)
+        {
+            if(x%i==0)
+            {
+                n++;
+            }
+        }
+        if(n==1)
+        {
+            System.out.print("Prime Number");
+        }
+        else
+        {
+            System.out.print("Not a Prime");
+        }
+    }
+}
+
+
