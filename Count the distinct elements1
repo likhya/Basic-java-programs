@@ -1,0 +1,67 @@
+Count the distinct elements
+
+Write a  program to count the distinct elements in an array:
+
+Input & Output Format:
+
+Input consists of 1 integer and 1 array.
+
+First input consists of size of an array.
+
+Second inputs corresponds to the array elements.
+
+Output consists of one integer and corresponds to the count of the distinct elements.
+
+Sample Input:
+
+6
+2
+6
+6
+4
+5
+5
+
+Sample Output:
+4
+
+Source Code:
+import java.util.*; 
+class Countdistinct {
+ 
+    static int countDistinct(int arr[], int n)
+    {
+        // First sort the array so that all
+        // occurrences become consecutive
+        Arrays.sort(arr);
+ 
+        // Traverse the sorted array
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            // Move the index ahead while
+            // there are duplicates
+            while (i<n-1&&arr[i]==arr[i + 1]) {
+                i++;
+            }
+            count++;
+        }
+        return count;
+    }
+ 
+    // Driver code
+    public static void main(String[] args)
+    { 
+        int n;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int arr[]=new int[n];
+        int i;
+        for(i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        //int arr[] = { 6, 10, 5, 4, 9, 120, 4, 6, 10 };
+        n = arr.length;
+        System.out.println(countDistinct(arr, n));
+    }
+}
