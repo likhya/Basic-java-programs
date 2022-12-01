@@ -1,0 +1,53 @@
+complex equation results L1
+
+Write a program that calculates and prints the value according to the given formula: Q = Square root of [(2 * C * D)/H]. Following are the fixed values of C and H: C is 50. H is 30. D is the variable whose values should be input to your program in a comma-separated sequence.
+
+Example
+
+Let us assume the following comma separated input sequence is given to the program:
+
+Input
+
+100
+
+150
+
+180
+
+output
+
+18 22 24
+
+import java.util.*;
+public class complexequation
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+       /* int C=sc.nextInt();
+       // int D=sc.nextInt();
+       
+        int H=sc.nextInt();
+        int a[][]=new int[n][m];
+         for(int i=0;i<n;i++)
+        {
+           for(int j=0;j<n;j++)
+           {
+            a[i][j]=sc.nextInt();
+           }
+        }
+        double Q=Math.sqrt((2 * C * D)/H);
+        System.out.println(Q);*/
+        int a[]=new int[3];
+        double d=0;
+        for(int i=0;i<3;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<3;i++)
+        {
+            d=Math.sqrt((2*50*a[i])/30);
+            System.out.printf("%.0f ",d);
+        }
+    }
+}
