@@ -1,0 +1,27 @@
+Function 1 - hello world
+
+Description:
+Make a simple function called greet that returns the most-famous "hello world!".
+
+Output:
+hello world!
+
+import java.util.*;
+public class hello {
+  
+  public static String greet()
+  {
+      String s="hello world!";
+      return s;
+  }
+
+public static void main(String[] args)
+    
+    {
+        Scanner sc=new Scanner(System.in);
+       // String s;
+        System.out.println(greet());
+       
+    }
+  
+}
