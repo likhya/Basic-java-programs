@@ -1,0 +1,61 @@
+Inheritance 
+
+class Dog
+{
+    public int animal=444;//error: modifier default not allowed here default int animal=444;
+    public static void eat()
+    {
+        System.out.println("Eating");
+    }
+    public static void sleep()
+    {
+        System.out.println("Sleeping");
+    }
+}
+class Cat extends Dog
+{
+    public static void sound()
+    {
+        System.out.println("meowing");
+    }
+    public static void fly()
+    {
+        System.out.println("drinking");
+    }
+}
+class Eagle extends Cat
+{
+    public static void fly()
+    {
+        System.out.println("flying");
+    }
+    public static void walk()
+    {
+        System.out.println("walking");
+    }
+}
+public class Inherit extends Eagle//public,private,protected,default
+{
+    public static void talk()
+    {
+        System.out.println("talking");
+    }
+     public static void dance()
+    {
+        System.out.println("dancing");
+    }
+    
+    public static void main(String args[])
+    {
+        Eagle d=new Eagle();
+        d.eat();
+        d.sleep();
+        d.sound();
+        d.fly();
+        d.fly();
+        d.walk();
+        talk();
+        dance();
+        System.out.println(d.animal);//error: animal has private access in Dog System.out.println(d.animal);
+    }
+}
