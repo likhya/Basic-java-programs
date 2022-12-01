@@ -1,0 +1,101 @@
+Basic Mathematical Operations
+
+Your task is to create a function that does four basic mathematical operations.
+The function should take three arguments - operation(string/char), value1(number), value2(number).
+The function should return the result of numbers after applying the chosen operation.
+Examples(Operator, value1, value2) --> output
+Sample Input-1
++
+4
+7
+Sample Output-1
+11
+Sample Input-2
+-
+15
+18
+Sample Output-2
+3
+
+/*import java.util.*;
+public class Basicmath
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int d=0;
+        switch(s)
+        {
+            case "+":
+                d=a+b;
+                System.out.println(d);
+                break;
+            case "-":
+                d=a-b;
+                System.out.println(d);
+                break;
+            case "*":
+                d=a*b;
+                System.out.println(d);
+                break;
+            case "/":
+                d=a/b;
+                System.out.println(d);
+                break;
+            case "%":
+                d=a%b;
+                System.out.println(d);
+                break;
+        }
+    }
+}*/
+import java.util.*;
+public class Basicmath
+{
+    public static void main(String args[])
+    {
+       Scanner sc=new Scanner(System.in);
+       String st=sc.nextLine();
+       int a=sc.nextInt();
+       int b=sc.nextInt();
+       Swap1 s=new Swap1();
+       s.Swa(a,b,st);
+      
+       
+    }
+}
+class Swap1
+{
+    public static void Swa(int a,int b,String st)
+    {
+        int d=0;
+        switch(st)
+        {
+            case "+":
+                d=a+b;
+                System.out.println(d);
+                break;
+            case "-":
+                d=a-b;
+                System.out.println(d);
+                break;
+            case "*":
+                d=a*b;
+                System.out.println(d);
+                break;
+            case "/":
+                d=a/b;
+                System.out.println(d);
+                break;
+            case "%":
+                d=a%b;
+                System.out.println(d);
+                break;
+        }
+    }
+}
+
+    
