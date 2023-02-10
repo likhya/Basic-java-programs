@@ -1,0 +1,23 @@
+Create LinkedList in Java
+
+Write a java program using ArrayList to display the following output:
+
+LinkedList: [Dog, Cat, Cow]
+
+Source code:
+//Code here
+import java.util.*;//import java.util.ArrayList;
+public class collection{
+	public static void main(String[] args)
+	{
+	    List al=new ArrayList<String>();
+	LinkedList<String> list=new LinkedList<String>();
+	
+		al.add("Dog");
+		al.add("Cat");
+		al.add("Cow");
+		
+	System.out.println("LinkedList: "+al);
+	}
+}
+	
