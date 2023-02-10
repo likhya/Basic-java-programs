@@ -1,0 +1,36 @@
+Remove First and Last Character
+
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+
+INPUT-1:
+eloquent
+OUTPUT-1:
+loquen
+INPUT-2:
+country
+
+OUTPUT-2:
+
+ountr
+Source Code:
+import java.util.*;
+public class remove{
+    public static String remove(String a) {
+        String s="";
+        for(int i=1;i<a.length()-1;i++)
+        {
+            char c=a.charAt(i);
+            s=s+c;
+            /*deleteCharAt(0);
+            deleteCharAt(length-1);*/
+        }
+        return s;
+        
+    }
+
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+String a=sc.next();
+System.out.println(remove(a));
+}}
