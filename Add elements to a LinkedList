@@ -1,0 +1,26 @@
+Add elements to a LinkedList
+
+Write a java program using ArrayList to display the following output:
+
+LinkedList: [Dog, Cat, Cow]
+Updated LinkedList: [Dog, Horse, Cat, Cow]
+Source Code:
+//Code here
+//Code here
+import java.util.*;//import java.util.ArrayList;
+public class collection{
+	public static void main(String[] args)
+	{
+	    List al=new ArrayList<String>();
+	LinkedList<String> list=new LinkedList<String>();
+	
+		al.add("Dog");
+		al.add("Cat");
+		al.add("Cow");
+		
+	System.out.println("LinkedList: "+al);
+	al.add(1,"Horse");
+		System.out.println("Updated LinkedList: "+al);
+	}
+}
+	
