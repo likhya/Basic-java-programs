@@ -1,0 +1,48 @@
+Reversed Strings
+Requested files: Reverse.java (Download)
+Maximum number of files: 5
+Type of work: Individual work
+Complete the solution so that it reverses the string passed into it.
+
+INPUT-1:
+
+world
+
+OUTPUT-1:
+
+dlrow
+Source code:
+import java.util.*;
+public class Reverse{
+
+  public static String solution(String b) {
+    //write your logic here
+    String c="";
+    char a;
+    for(int i=0;i<b.length();i++)
+    {
+    a=b.charAt(i);
+    c=a+c;
+    }
+    return c;
+  }
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+String b=sc.next();
+System.out.println(solution(b));
+}}
+/*import java.util.*;
+public class Reverse{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+String b=sc.nextLine();
+String c="";
+char a;
+
+for(int i=0;i<b.length();i++)
+{
+    a=b.charAt(i);
+    c=a+c;
+}
+System.out.println(c);
+}}*/
