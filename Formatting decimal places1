@@ -1,0 +1,22 @@
+Formatting decimal places
+Requested files: Decimal.java (Download)
+Maximum number of files: 5
+Type of work: Individual work
+Each number should be formatted that it is rounded to two decimal places. You don't need to check whether the input is a valid number because only valid numbers are used in the tests.
+
+INPUT 1:
+
+4.659253
+
+OUTPUT 1:
+
+4.66
+Source Code:
+import java.util.*;
+public class Decimal
+{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+double b=sc.nextDouble();
+System.out.printf("%.2f",b);
+}}
