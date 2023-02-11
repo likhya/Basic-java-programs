@@ -1,0 +1,21 @@
+Change Elements of a LinkedList
+
+LinkedList: [Java, Python, JavaScript, Java]
+Updated LinkedList: [Java, Python, JavaScript, Kotlin]
+Source Code:
+import java.util.*;//import java.util.ArrayList;
+public class collection{
+	public static void main(String[] args)
+	{
+	    List al=new ArrayList<String>();
+	    LinkedList<String> list=new LinkedList<String>();
+		al.add("Java");
+		al.add("Python");
+		al.add("JavaScript");
+		al.add("Java");
+	    System.out.println("LinkedList: "+al);
+	    al.remove(3);
+	    al.add("Kotlin");
+     	System.out.println("Updated LinkedList: "+al);
+	}
+}
