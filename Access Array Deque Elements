@@ -1,0 +1,22 @@
+Access Array Deque Elements
+
+ArrayDeque: [Dog, Cat, Horse]
+First Element: Dog
+Last Element: Horse
+
+//Code here
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Deque<String> q=new ArrayDeque<String>();
+	    q.offerFirst("Dog");
+	    q.add("Cat");
+	    q.offerLast("Horse");
+		System.out.println("ArrayDeque: "+q);
+		System.out.println("First Element: "+q.getFirst());
+		System.out.println("Last Element: "+q.getLast());
+		
+	}
+}
+//Code here//Code here
