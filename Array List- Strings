@@ -1,0 +1,21 @@
+Array List- Strings
+
+Type of work: Individual work
+Write a java program using ArrayList ti print the following output:
+
+ArrayList: [Java, Python, Swift]
+
+Source Code:
+import java.util.*;//import java.util.ArrayList;
+public class Array{
+	public static void main(String[] args)
+	{
+	    ArrayList al=new ArrayList<String>();
+	ArrayList<String> list=new ArrayList<String>();
+		al.add("Java");
+		al.add("Python");
+    	al.add("Swift");
+	System.out.println("ArrayList: "+al);
+	}
+}
+		//Code here//code here
