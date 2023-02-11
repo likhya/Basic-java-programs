@@ -1,0 +1,32 @@
+Remove Vector Elements
+
+Write a java program using collection to display the following output:
+
+Methods: 
+
+remove(index) - removes an element from specified position
+removeAll() - removes all the elements
+clear() - removes all elements. It is more efficient than removeAll()
+Sample Output: 
+
+Initial Vector: [Dog, Horse, Cat]
+Removed Element: Horse
+New Vector: [Dog, Cat]
+Vector after clear(): []
+
+Source Code:
+import java.util.*;
+public class collection{
+    public static void main(String [] args){
+        Vector<String> vec=new Vector<String>();
+        vec.add("Dog");
+        vec.add("Horse");
+        vec.add("Cat");
+         System.out.println("Initial Vector: "+vec);
+         System.out.println("Removed Element: "+vec.get(1));
+         vec.remove(1);
+         System.out.println("New Vector: "+vec);
+         vec.clear();
+        System.out.println("Vector after clear(): "+vec);
+    }
+}
