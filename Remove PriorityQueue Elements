@@ -1,0 +1,28 @@
+Remove PriorityQueue Elements
+
+Write a java program using the collection to display the following output:
+
+Methods: 
+
+remove() - removes the specified element from the queue
+poll() - returns and removes the head of the queue
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Queue<Integer> q=new PriorityQueue<Integer>();
+	    /*q.add(2);
+	    q.add(4);
+	    q.add(2);*/
+	    q.offer(1);
+	    q.offer(4);
+	     q.offer(2);
+		System.out.println("PriorityQueue: "+q);
+		int q1=q.poll();
+		int rc=q.remove();
+	    System.out.println("Is the element 2 removed? "+!(q.contains(2)));
+	    System.out.println("Removed Element Using poll(): "+q1);
+	}
+}
+
