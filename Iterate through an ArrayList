@@ -1,0 +1,21 @@
+Iterate through an ArrayList
+
+ArrayList: [Cow, Cat, Dog]
+Accessing individual elements:  
+Cow, Cat, Dog,
+
+Source Code:
+import java.util.*;//import java.util.ArrayList;
+public class collection{
+	public static void main(String[] args)
+	{
+	    ArrayList al=new ArrayList<String>();
+	ArrayList<String> list=new ArrayList<String>();
+		al.add("Cow");
+		al.add("Cat");
+    	al.add("Dog");
+	System.out.println("ArrayList: "+al);
+	System.out.println("Accessing individual elements: "+al.get(0)+", "+al.get(1)+", "+al.get(2));
+	}
+}
+		//Code here
