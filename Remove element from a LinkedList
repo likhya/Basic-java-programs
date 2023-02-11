@@ -1,0 +1,27 @@
+Remove element from a LinkedList
+
+Write a java program using ArrayList to display the following output:
+
+LinkedList: [Java, Python, JavaScript, Kotlin]
+Removed Element: Python
+New LinkedList: [Java, JavaScript, Kotlin]
+
+Source Code:
+//Code here
+import java.util.*;//import java.util.ArrayList;
+public class collection{
+	public static void main(String[] args)
+	{
+	    List al=new ArrayList<String>();
+	    LinkedList<String> list=new LinkedList<String>();
+		al.add("Java");
+		al.add("Python");
+		al.add("JavaScript");
+		al.add("Kotlin");
+	    System.out.println("LinkedList: "+al);
+	    System.out.println("Removed Element: "+al.get(1));
+	    al.remove(1);
+	    
+     	System.out.println("New LinkedList: "+al);
+	}
+}
