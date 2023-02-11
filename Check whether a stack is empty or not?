@@ -1,0 +1,24 @@
+Check whether a stack is empty or not?
+
+Write a java program using the collection to display the following output:
+
+Methods: 
+
+To check whether a stack is empty or not, we use the empty() method.
+Sample Output: 
+Stack: [Dog, Horse, Cat]
+Is the stack empty? false
+
+import java.util.*;
+public class Main{
+    public static void main(String [] args){
+        Stack<String> stk=new Stack<String>();
+        stk.push("Dog");
+        stk.push("Horse");
+        stk.push("Cat");
+        System.out.println("Stack: "+stk);
+     
+        System.out.println("Is the stack empty? "+stk.empty());
+        
+    }
+}//Code here
