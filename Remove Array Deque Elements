@@ -1,0 +1,40 @@
+Remove Array Deque Elements
+
+Write a program in collection to print the following output:
+
+
+Remove elements using the remove(), removeFirst(), removeLast() method
+
+remove() - returns and removes an element from the first element of the array deque
+remove(element) - returns and removes the specified element from the head of the array deque
+removeFirst() - returns and removes the first element from the array deque (equivalent to remove())
+removeLast() - returns and removes the last element from the array deque
+Sample Output: 
+
+
+ArrayDeque: [Dog, Cat, Cow, Horse]
+Removed Element: Dog
+New ArrayDeque: [Cat, Cow, Horse]
+Removed First Element: Cat
+Removed Last Element: Horse
+
+//Code here
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Deque<String> q=new ArrayDeque<String>();
+	    q.offerFirst("Dog");
+	    q.add("Cat");
+	     q.add("Cow");
+	    q.offerLast("Horse");
+		System.out.println("ArrayDeque: "+q);
+		System.out.println("Removed Element: "+q.peek());
+		String c=q.remove();
+		System.out.println("New ArrayDeque: "+q);
+		System.out.println("Removed First Element: "+q.removeFirst());
+		System.out.println("Removed Element: "+q.removeLast());
+		
+	}
+}
+//Code here
